@@ -1,0 +1,131 @@
+.travelers-diary {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .create-diary,
+  .view-diaries {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 48%;
+  }
+  
+  .create-diary h2,
+  .view-diaries h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .diary-form input,
+  .diary-form textarea,
+  .diary-form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .diary-form button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .diary-form button:hover {
+    background: #0056b3;
+  }
+  
+  .diaries-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  
+  .diary-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .diary-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .diary-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .diary-card .card-content {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .diary-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .diary-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .diary-card .author-info {
+    font-size: 0.9rem;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .diary-card .author-info i {
+    margin-right: 5px;
+  }
+  
+  .diary-card .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .diary-card .read-more:hover {
+    background: #0056b3;
+  }
+  

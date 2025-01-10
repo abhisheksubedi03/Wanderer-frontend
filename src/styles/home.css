@@ -39,6 +39,10 @@
    object-fit   : cover;
 }
 
+.desktop1-images {
+   display: none;
+ }
+
 .hero__content {
    padding-top: 3.5rem;
 }
@@ -132,9 +136,18 @@
       font-size: 2.5rem;
    }
 
-   .hero__img-box {
+   .desktop-images {
       display: none;
-   }
+    }
+  
+   .desktop1-images {
+      display: block !important;
+      height: 450px;
+    }
+  
+    .hero__img-box img {
+      width: 100%;
+    }
 
    .hero__video-box {
       display: block;

@@ -17,6 +17,7 @@ import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGalle
 import Testimonials from '../components/Testimonial/Testimonials'
 import NewsLetter from '../shared/Newsletter'
 import TopDeals from '../components/Popular-destination/TopDeals'
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
    return <>
@@ -39,24 +40,30 @@ const Home = () => {
                   </div>
                </Col> */}
 
-               <Col lg='3'>
+               <Col lg='3'className="desktop-images">
                   <div className="hero__img-box">
                      <img src={heroImg} alt="" />
                   </div>
                </Col>
                
-               <Col lg='3'>
+               <Col lg='3'className="desktop-images">
                   <div className="hero__img-box mt-5">
                      <img src={heroImg02} alt="" />
                   </div>
                </Col>
-               <Col lg='3'>
+               <Col lg='3'className="desktop-images">
                   <div className="hero__img-box">
                      <img src={heroImg03} alt="" />
                   </div>
                </Col>
                
-               <Col lg='3'>
+               <Col lg='3'className="desktop-images">
+                  <div className="hero__img-box mt-5">
+                     <img src={heroImg04} alt="" />
+                  </div>
+               </Col>
+
+               <Col lg='3'className="desktop1-images">
                   <div className="hero__img-box mt-5">
                      <img src={heroImg04} alt="" />
                   </div>

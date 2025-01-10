@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useContext, useState } from 'react';
 import { Container, Row, Button } from 'reactstrap';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
-import { FaHeart, FaDollarSign, FaPoundSign } from 'react-icons/fa'; // Importing icons
+import { FaDollarSign, FaPoundSign, } from 'react-icons/fa'; // Importing icons
 import Logo from '../../assets/images/logo1.png';
 import './header.css';
 import { AuthContext } from '../../context/AuthContext';
@@ -19,6 +19,11 @@ const nav__links = [
       path: '/tours',
       display: 'Destinations'
    },
+   {
+      path: '/diary',
+      display: 'Diary'
+   },
+
 ];
 
 const Header = () => {
@@ -83,9 +88,11 @@ const Header = () => {
                   <div className="nav__right d-flex align-items-center gap-4">
                      <div className="nav__icons d-flex align-items-center gap-3">
                         {/* Wishlist Icon */}
-                        <span className="wishlist__icon">
-                           <FaHeart size={24} />
-                        </span>
+                        {/* <span className="wishlist__icon">
+                           <NavLink to="/TravelersDiary">
+                              <FaBookmark size={24} />
+                           </NavLink>
+                        </span> */}
                         
                         {/* Currency Change Icon - toggles between Dollar and Pound */}
                         <span className="currency__icon" onClick={toggleCurrency} style={{ cursor: 'pointer' }}>

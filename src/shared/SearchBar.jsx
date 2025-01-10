@@ -49,7 +49,7 @@ const SearchBar = () => {
             <FormGroup className='d-flex gap-3 form__group form__group-last'>
                <span><i class='ri-group-line'></i></span>
                <div>
-                  <h6>Max People</h6>
+                  <h6>No of People</h6>
                   <input type="number" placeholder='0' ref={maxGroupSizeRef} />
                </div>
             </FormGroup>
